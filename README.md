@@ -2,7 +2,6 @@
 
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=32&duration=3500&pause=1200&color=58A6FF&center=true&vCenter=true&width=700&height=80&lines=Nhat+Hoang+BUI;Data+Scientist+%26+ML+Engineer;Building+ML+Solutions+That+Matter)](https://git.io/typing-svg)
 
-<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=15&duration=3000&pause=1000&color=8B949E&center=true&vCenter=true&width=600&lines=📍+INSA+Centre+Val+de+Loire+·+Blois%2C+France;🎯+Open+to+Data+Science+%26+ML+Engineering+Internships;🚀+Turning+raw+data+into+real+impact" alt="subtitle"/>
 
 <br/>
 
@@ -17,7 +16,7 @@
 
 ## About Me
 
-I'm a **Data Science & Engineering student** at **INSA Centre Val de Loire** with a strong drive to build ML solutions that solve real-world problems. I specialize in designing **end-to-end machine learning pipelines** — from exploratory data analysis and feature engineering all the way to model deployment.
+I'm a **Engineering student** at **INSA Centre Val de Loire** with a strong drive to build ML solutions that solve real-world problems. I specialize in designing **end-to-end machine learning pipelines** — from exploratory data analysis and feature engineering all the way to model deployment.
 
 With hands-on experience in **healthcare AI**, **market analytics**, and **aviation prediction**, I enjoy working at the intersection of data, algorithms, and product thinking. I care deeply about writing clean, reproducible code and communicating data-driven insights clearly.
 
