@@ -70,14 +70,12 @@ With hands-on experience in **healthcare AI**, **market analytics**, and **aviat
 ## GitHub Stats
 
 <div align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=Hoanghoccode2805&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=BC8CFF&text_color=C9D1D9"/>
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hoanghoccode2805&layout=compact&langs_count=6&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9"/>
+  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=Hoanghoccode2805&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=BC8CFF&text_color=C9D1D9&cache_seconds=1800"/>
+  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hoanghoccode2805&layout=compact&langs_count=6&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&cache_seconds=1800"/>
 </div>
-
 <div align="center">
   <img width="70%" src="https://streak-stats.demolab.com/?user=Hoanghoccode2805&theme=dark&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=FFA657&currStreakLabel=BC8CFF&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E"/>
 </div>
-
 <div align="center">
   <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Hoanghoccode2805&bg_color=0D1117&color=58A6FF&line=BC8CFF&point=FFA657&area=true&hide_border=true"/>
 </div>
@@ -87,15 +85,60 @@ With hands-on experience in **healthcare AI**, **market analytics**, and **aviat
 ## Featured Projects
 
 <div align="center">
+<table>
+<tr>
+<td width="50%" valign="top">
 
-[![CKD](https://github-readme-stats.vercel.app/api/pin/?username=Hoanghoccode2805&repo=Predicting_chronic_kidney_disease&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=BC8CFF&text_color=C9D1D9)](https://github.com/Hoanghoccode2805/Predicting_chronic_kidney_disease)
-[![Laptop](https://github-readme-stats.vercel.app/api/pin/?username=Hoanghoccode2805&repo=laptop-price-intelligence&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=BC8CFF&text_color=C9D1D9)](https://github.com/Hoanghoccode2805/laptop-price-intelligence)
+**🔬 [Predicting Chronic Kidney Disease](https://github.com/Hoanghoccode2805/Predicting_chronic_kidney_disease)**
 
-[![Flight](https://github-readme-stats.vercel.app/api/pin/?username=Hoanghoccode2805&repo=EcoFlight_Delay_Predictor&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=BC8CFF&text_color=C9D1D9)](https://github.com/Hoanghoccode2805/EcoFlight_Delay_Predictor)
-[![University](https://github-readme-stats.vercel.app/api/pin/?username=Hoanghoccode2805&repo=University-infrastructure-manager&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=BC8CFF&text_color=C9D1D9)](https://github.com/Hoanghoccode2805/University-infrastructure-manager)
+End-to-end ML system for CKD detection using Scikit-learn Pipelines and Streamlit — automated preprocessing, model selection, and interactive web UI.
 
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+![Healthcare AI](https://img.shields.io/badge/Healthcare_AI-BC8CFF?style=flat-square)
+
+</td>
+<td width="50%" valign="top">
+
+**💻 [Laptop Price Intelligence](https://github.com/Hoanghoccode2805/laptop-price-intelligence)**
+
+Full data pipeline analyzing the French laptop market — Selenium scraping → Pandas feature engineering → R/ggplot2 visualization.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![R](https://img.shields.io/badge/R-276DC3?style=flat-square&logo=r&logoColor=white)
+![Selenium](https://img.shields.io/badge/Selenium-43B02A?style=flat-square&logo=selenium&logoColor=white)
+![Market Analytics](https://img.shields.io/badge/Market_Analytics-FFA657?style=flat-square)
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+**✈️ [EcoFlight Delay Predictor](https://github.com/Hoanghoccode2805/EcoFlight_Delay_Predictor)**
+
+ML model predicting flight delays via Logistic Regression — manual feature engineering on departure deviations and temporal patterns for aviation efficiency.
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white)
+![Aviation ML](https://img.shields.io/badge/Aviation_ML-58A6FF?style=flat-square)
+
+</td>
+<td width="50%" valign="top">
+
+**🏛️ [University Infrastructure Manager](https://github.com/Hoanghoccode2805/University-infrastructure-manager)**
+
+OOP C++ project modeling university infrastructure — class hierarchy, dynamic memory management, operator overloading.
+
+![C++](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=c%2B%2B&logoColor=white)
+![OOP Systems](https://img.shields.io/badge/OOP_Systems-3FB950?style=flat-square)
+
+</td>
+</tr>
+</table>
 </div>
 
+---
 
 ## Soft Skills
 
