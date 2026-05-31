@@ -70,14 +70,25 @@ With hands-on experience in **healthcare AI**, **market analytics**, and **aviat
 ## GitHub Stats
 
 <div align="center">
-  <img height="170em" src="https://github-readme-stats.vercel.app/api?username=Hoanghoccode2805&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=BC8CFF&text_color=C9D1D9&cache_seconds=1800"/>
-  <img height="170em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hoanghoccode2805&layout=compact&langs_count=6&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9&cache_seconds=1800"/>
+<!-- Stats Card — hosted on dedicated instance, more stable -->
+<a href="https://github.com/Hoanghoccode2805">
+  <img height="165em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api?username=Hoanghoccode2805&show_icons=true&theme=github_dark&include_all_commits=true&count_private=true&hide_border=true&bg_color=0D1117&title_color=58A6FF&icon_color=BC8CFF&text_color=C9D1D9"/>
+</a>
+<a href="https://github.com/Hoanghoccode2805">
+  <img height="165em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Hoanghoccode2805&layout=compact&langs_count=6&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9"/>
+</a>
 </div>
 <div align="center">
-  <img width="70%" src="https://streak-stats.demolab.com/?user=Hoanghoccode2805&theme=dark&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=FFA657&currStreakLabel=BC8CFF&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E"/>
+<!-- Streak Stats — demolab instance (stable) -->
+<a href="https://github.com/Hoanghoccode2805">
+  <img width="68%" src="https://streak-stats.demolab.com/?user=Hoanghoccode2805&theme=dark&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=FFA657&currStreakLabel=BC8CFF&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E&card_width=700"/>
+</a>
 </div>
 <div align="center">
-  <img width="95%" src="https://github-readme-activity-graph.vercel.app/graph?username=Hoanghoccode2805&bg_color=0D1117&color=58A6FF&line=BC8CFF&point=FFA657&area=true&hide_border=true"/>
+<!-- Activity Graph -->
+<a href="https://github.com/Hoanghoccode2805">
+  <img width="94%" src="https://github-readme-activity-graph.vercel.app/graph?username=Hoanghoccode2805&bg_color=0D1117&color=58A6FF&line=BC8CFF&point=FFA657&area=true&area_color=1c2331&hide_border=true&radius=6"/>
+</a>
 </div>
 
 ---
