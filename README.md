@@ -70,13 +70,6 @@ With hands-on experience in **healthcare AI**, **market analytics**, and **aviat
 ## GitHub Stats
 
 <div align="center">
-<!-- Stats Card — hosted on dedicated instance, more stable -->
-
-<a href="https://github.com/Hoanghoccode2805">
-  <img height="165em" src="https://github-readme-stats-git-masterrstaa-rickstaa.vercel.app/api/top-langs/?username=Hoanghoccode2805&layout=compact&langs_count=6&theme=github_dark&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=C9D1D9"/>
-</a>
-</div>
-<div align="center">
 <!-- Streak Stats — demolab instance (stable) -->
 <a href="https://github.com/Hoanghoccode2805">
   <img width="68%" src="https://streak-stats.demolab.com/?user=Hoanghoccode2805&theme=dark&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=FFA657&currStreakLabel=BC8CFF&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E&card_width=700"/>
