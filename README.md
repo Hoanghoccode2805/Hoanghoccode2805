@@ -70,16 +70,14 @@ With hands-on experience in **healthcare AI**, **market analytics**, and **aviat
 ## GitHub Stats
 
 <div align="center">
-<!-- Streak Stats — demolab instance (stable) -->
-<a href="https://github.com/Hoanghoccode2805">
-  <img width="68%" src="https://streak-stats.demolab.com/?user=Hoanghoccode2805&theme=dark&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=FFA657&currStreakLabel=BC8CFF&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E&card_width=700"/>
-</a>
+  <a href="https://github.com/Hoanghoccode2805">
+    <img width="68%" src="https://streak-stats.demolab.com/?user=Hoanghoccode2805&theme=dark&hide_border=true&background=0D1117&stroke=30363D&ring=58A6FF&fire=FFA657&currStreakLabel=BC8CFF&sideNums=C9D1D9&sideLabels=8B949E&dates=8B949E&card_width=700"/>
+  </a>
 </div>
 <div align="center">
-<!-- Activity Graph -->
-<a href="https://github.com/Hoanghoccode2805">
-  <img width="94%" src="https://github-readme-activity-graph.vercel.app/graph?username=Hoanghoccode2805&bg_color=0D1117&color=58A6FF&line=BC8CFF&point=FFA657&area=true&area_color=1c2331&hide_border=true&radius=6"/>
-</a>
+  <a href="https://github.com/Hoanghoccode2805">
+    <img width="94%" src="https://github-readme-activity-graph.vercel.app/graph?username=Hoanghoccode2805&bg_color=0D1117&color=58A6FF&line=BC8CFF&point=FFA657&area=true&area_color=1c2331&hide_border=true&radius=6"/>
+  </a>
 </div>
 
 ---
