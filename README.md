@@ -20,7 +20,9 @@ A passionate data professional with a robust foundation in engineering and appli
 
 I specialize in designing end-to-end machine learning pipelines—from exploratory data analysis and rigorous feature engineering to seamless model deployment. With hands-on experience spanning SNCF MLops, healthcare AI, anime recommendation system, and aviation prediction, I thrive at the intersection of complex algorithms, big data, and product-centric thinking. I care deeply about writing clean, reproducible code and translating technical complexities into clear, actionable insights.
 
-> **Currently seeking an Internship (Stage) or Work-Study (Alternance) in Data Science, Machine Learning Engineering, or AI Engineering. Open to innovative opportunities in France and internationally**
+> [!NOTE]
+> **Currently seeking an Internship (Stage) or Work-Study (Alternance) in Data Science, Machine Learning Engineering, or AI Engineering.**  
+> Open to innovative opportunities in France and internationally.
 
 **What drives me:**
 -  Building predictive models that create tangible impact
