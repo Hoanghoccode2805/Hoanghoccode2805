@@ -16,11 +16,11 @@
 
 ## About Me
 
-I'm a **Engineering student** at **INSA Centre Val de Loire** with a strong drive to build ML solutions that solve real-world problems. I specialize in designing **end-to-end machine learning pipelines** — from exploratory data analysis and feature engineering all the way to model deployment.
+A passionate data professional with a robust foundation in engineering and applied mathematics, driven to build machine learning solutions that solve real-world problems. Currently completing my engineering studies at INSA Centre Val de Loire, I am advancing my academic journey next year into the L3 Mathématiques et Applications (Sciences des Données) program at Université Paris Cité. This transition reflects my deep commitment to mastering the mathematical underpinnings of Artificial Intelligence and my drive to push the boundaries of data research.
 
-With hands-on experience in **healthcare AI**, **market analytics**, and **aviation prediction**, I enjoy working at the intersection of data, algorithms, and product thinking. I care deeply about writing clean, reproducible code and communicating data-driven insights clearly.
+I specialize in designing end-to-end machine learning pipelines—from exploratory data analysis and rigorous feature engineering to seamless model deployment. With hands-on experience spanning SNCF MLops, healthcare AI, anime recommendation system, and aviation prediction, I thrive at the intersection of complex algorithms, big data, and product-centric thinking. I care deeply about writing clean, reproducible code and translating technical complexities into clear, actionable insights.
 
-> 🎯 **Currently seeking internships or entry-level roles** in Data Science, Machine Learning Engineering, or Data Engineer — open to positions in France and internationally.
+> Currently seeking an Internship (Stage) or Work-Study (Alternance) in Data Science, Machine Learning Engineering, or AI Engineering. Open to innovative opportunities in France and internationally
 
 **What drives me:**
 -  Building predictive models that create tangible impact
