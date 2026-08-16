@@ -97,17 +97,30 @@ I specialize in designing end-to-end machine learning pipelines—from explorato
   <table>
     <tr>
       <td align="center" width="50%">
-        <img width="100%" src="https://streak-stats.demolab.com/?user=Hoanghoccode2805&theme=tokyonight&hide_border=true&background=0D1117&ring=58A6FF&fire=FFA657&currStreakLabel=58A6FF" alt="GitHub Streak" />
+        <img width="100%" src="./assets/analytics/github-stats.svg" alt="GitHub Stats" />
       </td>
       <td align="center" width="50%">
-        <img width="100%" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Hoanghoccode2805&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=58A6FF&text_color=c9d1d9" alt="Top Languages" />
+        <img width="100%" src="./assets/analytics/top-languages.svg" alt="Top Languages" />
       </td>
     </tr>
   </table>
+  <br/>
+  <img width="50%" src="./assets/analytics/github-streak.svg" alt="GitHub Streak" />
 </div>
 
 <br/><br/>
 
+<div align="center">
+  <img src="./headers/header-3d-svg.svg" alt="3D Contribution Header" width="800"/>
+</div>
+
+<br/>
+
+<div align="center">
+  <img width="100%" src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph"/>
+</div>
+
+<br/><br/>
 
 <div align="center">
   <img src="./headers/header-activity.svg" alt="Activity Header" width="800"/>
@@ -122,7 +135,6 @@ I specialize in designing end-to-end machine learning pipelines—from explorato
 </div>
 
 <br/><br/>
-
 
 <div align="center">
   <img src="./headers/header-projects.svg" alt="Projects Header" width="800"/>
