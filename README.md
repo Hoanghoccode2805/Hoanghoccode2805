@@ -86,54 +86,6 @@ I specialize in designing end-to-end machine learning pipelines—from explorato
 
 <br/><br/>
 
-
-<div align="center">
-  <img src="./headers/header-analytics.svg" alt="GitHub Analytics Header" width="800"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <table>
-    <tr>
-      <td align="center" width="50%">
-        <img width="100%" src="./assets/analytics/github-stats.svg" alt="GitHub Stats" />
-      </td>
-      <td align="center" width="50%">
-        <img width="100%" src="./assets/analytics/top-languages.svg" alt="Top Languages" />
-      </td>
-    </tr>
-  </table>
-  <br/>
-  <img width="50%" src="./assets/analytics/github-streak.svg" alt="GitHub Streak" />
-</div>
-
-<br/><br/>
-
-<div align="center">
-  <img src="./headers/header-3d-svg.svg" alt="3D Contribution Header" width="800"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <img width="100%" src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph"/>
-</div>
-
-<br/><br/>
-
-<div align="center">
-  <img src="./headers/header-activity.svg" alt="Activity Header" width="800"/>
-</div>
-
-<br/>
-
-<div align="center">
-  <a href="https://github.com/Hoanghoccode2805">
-    <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Hoanghoccode2805&bg_color=0D1117&color=58A6FF&line=BC8CFF&point=FFA657&area=true&area_color=1c2331&hide_border=true&radius=6"/>
-  </a>
-</div>
-
 <br/><br/>
 
 <div align="center">
@@ -195,6 +147,54 @@ OOP C++ project modeling university infrastructure — class hierarchy, dynamic 
 </table>
 
 <br/><br/>
+
+<div align="center">
+  <img src="./headers/header-analytics.svg" alt="GitHub Analytics Header" width="800"/>
+</div>
+
+<br/>
+
+<div align="center">
+  <table>
+    <tr>
+      <td align="center" width="50%">
+        <img width="100%" src="./assets/analytics/github-stats.svg" alt="GitHub Stats" />
+      </td>
+      <td align="center" width="50%">
+        <img width="100%" src="./assets/analytics/top-languages.svg" alt="Top Languages" />
+      </td>
+    </tr>
+  </table>
+  <br/>
+  <img width="50%" src="./assets/analytics/github-streak.svg" alt="GitHub Streak" />
+</div>
+
+<br/><br/>
+
+<div align="center">
+  <img src="./headers/header-3d-svg.svg" alt="3D Contribution Header" width="800"/>
+</div>
+
+<br/>
+
+<div align="center">
+  <img width="100%" src="./profile-3d-contrib/profile-night-green.svg" alt="3D Contribution Graph"/>
+</div>
+
+<br/><br/>
+
+<div align="center">
+  <img src="./headers/header-activity.svg" alt="Activity Header" width="800"/>
+</div>
+
+<br/>
+
+<div align="center">
+  <a href="https://github.com/Hoanghoccode2805">
+    <img width="100%" src="https://github-readme-activity-graph.vercel.app/graph?username=Hoanghoccode2805&bg_color=0D1117&color=58A6FF&line=BC8CFF&point=FFA657&area=true&area_color=1c2331&hide_border=true&radius=6"/>
+  </a>
+</div>
+
 
 <div align="center">
   <img src="./headers/header-connect.svg" alt="Connect Header" width="800"/>
