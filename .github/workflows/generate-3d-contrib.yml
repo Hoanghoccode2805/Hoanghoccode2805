@@ -2,8 +2,8 @@ name: Generate 3D Contribution Graph & Analytics
 
 on:
   schedule:
-    - cron: "0 6 * * *" # Chạy lúc 6h sáng mỗi ngày
-  workflow_dispatch: # Cho phép bấm chạy bằng tay
+    - cron: "0 6 * * *" 
+  workflow_dispatch:
 
 concurrency:
   group: profile-3d
@@ -47,16 +47,16 @@ jobs:
           profile_total="$(jq -r '.data.viewer.contributionsCollection.contributionCalendar.totalContributions // empty' <<< "$contribution_data" 2>/dev/null || true)"
           restricted_total="$(jq -r '.data.viewer.contributionsCollection.restrictedContributionsCount // empty' <<< "$contribution_data" 2>/dev/null || true)"
 
+          # ĐÃ SỬA FIX LỖI: Cho phép giá trị bằng 0 (thay vì bắt buộc > 0)
           if [ "$token_owner" = "$TARGET_USERNAME" ] \
-            && [[ "$profile_total" =~ ^[1-9][0-9]*$ ]] \
-            && [[ "$restricted_total" =~ ^[1-9][0-9]*$ ]]; then
+            && [[ "$profile_total" =~ ^[0-9]+$ ]] \
+            && [[ "$restricted_total" =~ ^[0-9]+$ ]]; then
             echo "PROFILE_TOKEN=$METRICS_TOKEN" >> "$GITHUB_ENV"
             echo "PROFILE_API_TOTAL=$profile_total" >> "$GITHUB_ENV"
             echo "CONTRIBUTION_TOKEN_MODE=private" >> "$GITHUB_ENV"
-            echo "Using METRICS_TOKEN for $profile_total contributions, including $restricted_total private contributions."
           else
             echo "CONTRIBUTION_TOKEN_MODE=preserve" >> "$GITHUB_ENV"
-            echo "::warning::METRICS_TOKEN cannot prove access to $TARGET_USERNAME's private contribution calendar; preserving the last known-good profile assets."
+            echo "::warning::Khong the xac thuc token, hoac he thong dang loi."
           fi
 
       - name: Generate GitHub stats card
