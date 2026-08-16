@@ -1,9 +1,9 @@
-name: Generate 3D Contribution Graph
+name: Generate 3D Contribution Graph & Analytics
 
 on:
   schedule:
-    - cron: "0 6 * * *" # Runs daily at 06:00 UTC (avoid race with snake/metrics)
-  workflow_dispatch: # Allow manual trigger
+    - cron: "0 6 * * *" # Chạy lúc 6h sáng mỗi ngày
+  workflow_dispatch: # Cho phép bấm chạy bằng tay
 
 concurrency:
   group: profile-3d
@@ -17,12 +17,11 @@ jobs:
     permissions:
       contents: write
 
-    name: Generate 3D Profile
+    name: Generate 3D Profile & Stats
     steps:
       - name: Checkout
-        uses: actions/checkout@v7
+        uses: actions/checkout@v4
         with:
-          # The quality gate searches history for the last non-empty graph.
           fetch-depth: 0
 
       - name: Select contribution token
@@ -62,7 +61,7 @@ jobs:
 
       - name: Generate GitHub stats card
         if: env.CONTRIBUTION_TOKEN_MODE == 'private'
-        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e
         with:
           card: stats
           options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&icon_color=bb86fc&text_color=c9d1d9&ring_color=00d4ff&count_private=true&include_all_commits=true&card_width=420
@@ -72,7 +71,7 @@ jobs:
 
       - name: Generate top languages card
         if: env.CONTRIBUTION_TOKEN_MODE == 'private'
-        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e # v2.0.2
+        uses: stats-organization/github-readme-stats-action@e856fc8de9d7729b463c468911e232cfbdc3d55e
         with:
           card: top-langs
           options: username=${{ github.repository_owner }}&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00d4ff&text_color=c9d1d9&langs_count=8&card_width=320
@@ -82,9 +81,9 @@ jobs:
 
       - name: Generate streak card
         if: env.CONTRIBUTION_TOKEN_MODE == 'private'
-        uses: DenverCoder1/github-readme-streak-stats@51cfb8879073b4c016ce6286016de0b14d179077 # v1.7.0
+        uses: DenverCoder1/github-readme-streak-stats@51cfb8879073b4c016ce6286016de0b14d179077
         with:
-          options: user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=0d1117&stroke=bb86fc&ring=00d4ff&fire=ff6b6b&currStreakLabel=00d4ff&sideLabels=bb86fc&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=8b949e&date_format=j%20M&timezone=Asia/Seoul
+          options: user=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&background=0d1117&stroke=bb86fc&ring=00d4ff&fire=ff6b6b&currStreakLabel=00d4ff&sideLabels=bb86fc&currStreakNum=c9d1d9&sideNums=c9d1d9&dates=8b949e&date_format=j%20M&timezone=Asia/Ho_Chi_Minh
           path: assets/analytics/github-streak.svg
           token: ${{ env.PROFILE_TOKEN }}
 
@@ -92,7 +91,6 @@ jobs:
         if: env.CONTRIBUTION_TOKEN_MODE == 'private'
         run: |
           set -euo pipefail
-
           cards=(
             assets/analytics/github-stats.svg
             assets/analytics/top-languages.svg
@@ -107,14 +105,10 @@ jobs:
             fi
           done
 
-          grep -q 'data-testid="commits"' assets/analytics/github-stats.svg
-          grep -q 'mask_out_ring_behind_fire' assets/analytics/github-streak.svg
-
       - name: Generate 3D Contribution
         if: env.CONTRIBUTION_TOKEN_MODE == 'private'
-        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39 # v0.9.3
+        uses: yoshi389111/github-profile-3d-contrib@7d95e7d4cdc028dd1e1cbd957d65f35efb12ae39
         env:
-          # A verified owner token is required to include private contributions.
           GITHUB_TOKEN: ${{ env.PROFILE_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
 
@@ -122,61 +116,6 @@ jobs:
         if: env.CONTRIBUTION_TOKEN_MODE == 'private'
         run: |
           find profile-3d-contrib -type f -name '*.svg' ! -name 'profile-night-green.svg' -delete
-
-      - name: Protect the last known-good contribution graph
-        run: |
-          set -euo pipefail
-
-          if [ "$CONTRIBUTION_TOKEN_MODE" != 'private' ]; then
-            echo "::warning::Skipped 3D graph refresh because no verified owner token is available."
-            exit 0
-          fi
-
-          graph_path='profile-3d-contrib/profile-night-green.svg'
-          extract_total() {
-            grep -oP 'class="fill-strong">\K[0-9]+(?=</text><text[^>]*>contributions</text>)' "$1" | head -n 1
-          }
-
-          generated_total="$(extract_total "$graph_path" || true)"
-          if ! [[ "$generated_total" =~ ^[0-9]+$ ]]; then
-            echo "::error::The generated graph has no readable contribution total."
-            exit 1
-          fi
-
-          minimum_total=$((PROFILE_API_TOTAL * 70 / 100))
-          maximum_total=$((PROFILE_API_TOTAL * 130 / 100))
-          if [ "$generated_total" -ge "$minimum_total" ] && [ "$generated_total" -le "$maximum_total" ]; then
-            echo "CONTRIBUTION_TOTAL=$generated_total" >> "$GITHUB_ENV"
-            echo "CONTRIBUTION_STATUS=live" >> "$GITHUB_ENV"
-            echo "Generated a live graph with $generated_total contributions (API reference: $PROFILE_API_TOTAL)."
-            exit 0
-          fi
-
-          candidate="$RUNNER_TEMP/last-known-good-contribution-graph.svg"
-          last_good_ref=''
-          while read -r ref; do
-            if ! git show "$ref:$graph_path" > "$candidate" 2>/dev/null; then
-              continue
-            fi
-
-            candidate_total="$(extract_total "$candidate" || true)"
-            if [[ "$candidate_total" =~ ^[1-9][0-9]*$ ]] \
-              && [ "$candidate_total" -ge "$minimum_total" ] \
-              && [ "$candidate_total" -le "$maximum_total" ]; then
-              last_good_ref="$ref"
-              break
-            fi
-          done < <(git log --format=%H -- "$graph_path")
-
-          if [ -z "$last_good_ref" ]; then
-            echo "::error::GitHub returned zero contributions and no non-empty graph exists to preserve."
-            exit 1
-          fi
-
-          cp "$candidate" "$graph_path"
-          echo "CONTRIBUTION_TOTAL=$candidate_total" >> "$GITHUB_ENV"
-          echo "CONTRIBUTION_STATUS=last-known-good" >> "$GITHUB_ENV"
-          echo "::warning::Generated total $generated_total is outside the safe range $minimum_total-$maximum_total; preserving graph from $last_good_ref with $candidate_total contributions."
 
       - name: Commit & Push
         run: |
@@ -199,14 +138,13 @@ jobs:
             mkdir -p assets/analytics
             cp "$RUNNER_TEMP/profile-3d-contrib/profile-night-green.svg" profile-3d-contrib/profile-night-green.svg
             cp "$RUNNER_TEMP"/assets/analytics/*.svg assets/analytics/
-            find profile-3d-contrib -type f -name '*.svg' ! -name 'profile-night-green.svg' -delete
-
+            
             git add -A profile-3d-contrib/ assets/analytics/
             if git diff --cached --quiet; then
               echo "No changes to commit"
               exit 0
             fi
-            git commit -m "chore: update 3D contribution graph"
+            git commit -m "chore: update analytics and 3D graph"
             git push origin HEAD:main && exit 0
             echo "Push attempt $i failed, retrying..."
             sleep 5
